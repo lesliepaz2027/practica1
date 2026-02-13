@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer página web responsive</title>
+</head>
+<style>
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header, nav, main, footer{
+    padding: 15px;
+}
+
+header{
+    background: #333;
+    color: white;
+}
+
+nav{
+    background: #eee;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+
+
+footer{
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Contenedor principal*/
+.contenedor {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+
+}
+
+.col {
+    background: #f6f6f6;
+    padding: 15px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+/* Cuando la pantalla es pequeña: columnas una debajo de otra*/
+@media (max-width: 700px) {
+    .contenedor {
+        flex-direction: column; }
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+   background: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+</style>
+
+<body>
+
+    <header>
+        <h1>Mi web responsive Nimsi-Rauda</h1>
+        <p>Ejemplo simple para entender responsive</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <div class="contenedor">
+            <section class="col">
+             <h2>Sección 1</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+              <img src="https://tse3.mm.bing.net/th/id/OIP.LSspfPBZby0BGjz2HtLxAwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="golden">
+            </section>
+
+            <section class="col">
+            <h2>Sección 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+             <img src="https://images.wallpapersden.com/image/download/demon-slayer_a2xoZWuUmZqaraWkpJRnamtlrWZsZWU.jpg" alt="Demon Slayer">
+            </section>
+
+             <section class="col">
+            <h2>Sección 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 6</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 7</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 8</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 9</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 10</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 11</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+           <section class="col">
+            <h2>Sección 12</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi blanditiis ipsa quae voluptatibus optio, quis sint, et ex a provident, dicta illum laboriosam similique. Ipsum molestias libero accusamus fugiat maiores?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut dolor libero laudantium deleniti corporis, soluta repellat quia saepe optio obcaecati possimus. Eligendi cupiditate eaque enim sunt dolore. Explicabo, accusantium.</p>
+           </section>
+
+        </div>
+    </main>
+
+<footer>
+    <p>2026 - Ejemplo sencillo</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segunda página responsive</title>
+</head>
+<body>
+    <style> 
+
+    body {
+       margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    }
+
+    header, nav, main, footer{
+    padding: 15px;
+}
+
+header{
+    background: #2b6cb0;
+    color: white;
+}
+
+nav{
+    background: #2b6cb0;
+}
+
+footer{
+    background: #9695e4;
+    color: white;
+    text-align: center;
+}
+
+.grid{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.caja{
+    background: #faefef;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+@media(max-width: 700px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 55px;
+    }
+}
+
+naV a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+    </style>
+
+    <header>
+        <h1>Mi Web Responsive - Nimsi Rauda</h1>
+        <p>Ejemplo simple usando grid</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Blog</a>
+        <a href="#">Acerca</a>
+    </nav>
+
+<main>
+    <div class="grid">
+        <article class="caja">
+           <h2>Artículo 1</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam doloremque culpa repellat sequi! Et temporibus aliquam quae. Voluptas harum voluptatem labore autem magni praesentium nulla. Aliquam itaque deserunt incidunt.</p>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A fugit iure ad vel est temporibus dolorum necessitatibus reiciendis nemo harum, doloremque saepe eveniet officia at, commodi quisquam ratione possimus porro!</p>
+        </article>
+
+        <article class="caja">
+            <h2>Artículo 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tempora illum fugiat hic doloremque. Deserunt porro minus expedita possimus voluptatum officia? Id aliquam suscipit beatae eaque rerum possimus harum nostrum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id placeat esse ea eum animi, dicta labore facere magni perferendis iusto? Vel ut eos modi magnam error, ex labore voluptatem libero?</p>
+        </article>
+    </div>
+</main>
+
+<footer>
+    <p>Footer - ejemplo con grid</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tercer Página Web Responsive</title>
+</head>
+<body>
+    
+ <style>
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header, nav, main, footer{
+    padding: 15px;
+}
+
+header{
+    background: #1f2937;
+    color: white;
+}
+
+nav {
+    background: #f3f4f6;
+}
+
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+}
+
+
+.wrap {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
+
+main div{
+    display: flex;
+}
+
+nav a{
+    display: inline-block;
+    margin: 5px 10px 5px;
+    padding: 0px 15px;
+    background: white;
+    border: 1px solid #666;
+    text-decoration: none;
+    color: #111;
+}
+
+.caja {
+    background: #fefefe;
+    border: 1px solid #666;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+    </style>
+
+<header>
+    <div class="wrap">
+        <h1>Mi Web Responsive - Nimsi Rauda</h1>
+        <p>Esto funciona bien en móvi sin casl usar medidas queries</p>
+    </div>
+</header>
+
+<nav>
+ <div class="wrap">
+<a href="#">Inicio</a>
+<a href="#">Productos</a>
+<a href="#">Galeria</a>
+<a href="#">Contacto</a>
+</div>
+</nav>
+
+<main>
+<div class="wrap">
+<section class="caja">
+<h2>Sección A</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ratione molestiae explicabo quibusdam modi id quo eius ipsam eaque laudantium, neque quis esse doloremque temporibus labore iure? Nesciunt, at velit.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum odio obcaecati. Nobis, error. Culpa, ad aut, eaque officiis maiores iusto dicta quibusdam voluptates tempora facilis facere distinctio deserunt corporis!</p>
+<img src="https://tse1.mm.bing.net/th/id/OIF.4u1Uyjeda1MJH3xLCvBGzw?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Demon Slayer">
+</section>
+
+<section class="caja">
+<h2>Sección B</h2>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ratione molestiae explicabo quibusdam modi id quo eius ipsam eaque laudantium, neque quis esse doloremque temporibus labore iure? Nesciunt, at velit.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nostrum odio obcaecati. Nobis, error. Culpa, ad aut, eaque officiis maiores iusto dicta quibusdam voluptates tempora facilis facere distinctio deserunt corporis!</p>
+ <img src="https://i.pinimg.com/736x/a2/a9/21/a2a921d35d341cdd61b7743f82d1f867.jpg" alt="Demon Slayer">
+</section>
+ </div>
+</main>
+
+<footer>
+<div class="wrap">
+<p>2026 - Ejemplo básico responsive</p>
+</div>
+</footer>
+
+</body>
+</html>
